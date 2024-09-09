@@ -3,7 +3,7 @@ import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyD60sTgZpwaSeErVhNcbz6I4b8k3kl9fRs",
+    apiKey: process.env.API_KEY,
 
     authDomain: "driving-lessons-simulator.firebaseapp.com",
 
