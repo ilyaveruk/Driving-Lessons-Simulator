@@ -20,6 +20,7 @@ import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 
+
 function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -118,6 +119,7 @@ export default function Dashboard() {
                             sx={{ flexGrow: 1 }}
                         >
                             Dashboard
+
                         </Typography>
                     </Toolbar>
                 </AppBar>
