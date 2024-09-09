@@ -29,29 +29,20 @@ export default function Orders() {
             const data = await getDocs(collection(db, "ratings"));
             let formattedData = data.docs.map(doc => {
                 const docData = doc.data();
-                docData.timestamp = docData.timestamp.toDate().toLocaleString(); // Convert timestamp to Date
+                const date = docData.timestamp.toDate();
+                const formattedDate = `${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
+                docData.timestamp = formattedDate; // Convert timestamp to formatted date and time
                 return {id: doc.id, ...docData};
             });
             formattedData = formattedData.sort((a, b) => {
-                const dateA = new Date(a.timestamp);
-                const dateB = new Date(b.timestamp);
-                const dayA = dateA.getDate();
-                const dayB = dateB.getDate();
-                const monthA = dateA.getMonth();
-                const monthB = dateB.getMonth();
-
-
-                if (dayA !== dayB) {
-                    return dayB - dayA; // Sort by day first
-                } else {
-                    return monthB - monthA; // Then sort by month
-                }
+                const dateA = new Date(a.timestamp.split(' ')[0].split('/').reverse().join('/') + ' ' + a.timestamp.split(' ')[1]);
+                const dateB = new Date(b.timestamp.split(' ')[0].split('/').reverse().join('/') + ' ' + b.timestamp.split(' ')[1]);
+                return dateB - dateA; // Sort by date and time
             });
             setRows(formattedData);
         };
 
         fetchData();
-
     }, []);
 
 
@@ -66,7 +57,8 @@ export default function Orders() {
             <Table size="small">
                 <TableHead>
                     <TableRow>
-                        <TableCell style={{fontWeight: 'bold'}}>player Name</TableCell>
+                        <TableCell style={{fontWeight: 'bold'}}>Player Name</TableCell>
+                        <TableCell style={{fontWeight: 'bold'}}>Role</TableCell>
                         <TableCell style={{fontWeight: 'bold'}}>Level Name</TableCell>
                         <TableCell style={{fontWeight: 'bold'}}>Num Rating</TableCell>
                         <TableCell style={{fontWeight: 'bold'}}>Description</TableCell>
@@ -77,6 +69,7 @@ export default function Orders() {
                     {rows.slice(0, limit).map((row) => (
                         <HoverTableRow key={row.id}>
                             <TableCell>{row.playerId}</TableCell>
+                            <TableCell>{row.playerId}</TableCell>  {/*TODO: Change to role name*/}
                             <TableCell>{row.levelName}</TableCell>
                             <TableCell>{row.rating}</TableCell>
                             <TableCell>{row.description}</TableCell>
