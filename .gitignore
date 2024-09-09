@@ -4,6 +4,7 @@
 /dls-web/node_modules
 /.pnp
 .pnp.js
+/dls-web/.env
 
 # testing
 /coverage
