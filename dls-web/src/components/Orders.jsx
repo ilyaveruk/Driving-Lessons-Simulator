@@ -11,9 +11,6 @@ import db from "../utils/Firebase";
 import { collection, getDocs } from 'firebase/firestore';
 import {styled} from "@mui/material/styles";
 
-function preventDefault(event) {
-    event.preventDefault();
-}
 
 const HoverTableRow = styled(TableRow)({
     '&:hover': {
@@ -35,7 +32,21 @@ export default function Orders() {
                 docData.timestamp = docData.timestamp.toDate().toLocaleString(); // Convert timestamp to Date
                 return {id: doc.id, ...docData};
             });
-            formattedData = formattedData.sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+            formattedData = formattedData.sort((a, b) => {
+                const dateA = new Date(a.timestamp);
+                const dateB = new Date(b.timestamp);
+                const dayA = dateA.getDate();
+                const dayB = dateB.getDate();
+                const monthA = dateA.getMonth();
+                const monthB = dateB.getMonth();
+
+
+                if (dayA !== dayB) {
+                    return dayB - dayA; // Sort by day first
+                } else {
+                    return monthB - monthA; // Then sort by month
+                }
+            });
             setRows(formattedData);
         };
 
