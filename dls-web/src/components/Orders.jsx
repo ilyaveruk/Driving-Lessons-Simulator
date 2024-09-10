@@ -20,7 +20,7 @@ const HoverTableRow = styled(TableRow)({
 
 export default function Orders() {
     const [rows, setRows] = useState([]);
-    const [limit, setLimit] = useState(10);
+    const [limit, setLimit] = useState(20);
 
 
 
@@ -69,7 +69,7 @@ export default function Orders() {
                     {rows.slice(0, limit).map((row) => (
                         <HoverTableRow key={row.id}>
                             <TableCell>{row.playerId}</TableCell>
-                            <TableCell>{row.playerId}</TableCell>  {/*TODO: Change to role name*/}
+                            <TableCell>{row.role === 1 ? "Driver" : row.role === 0 ? "Instructor" : "No role has set"}</TableCell>
                             <TableCell>{row.levelName}</TableCell>
                             <TableCell>{row.rating}</TableCell>
                             <TableCell>{row.description}</TableCell>

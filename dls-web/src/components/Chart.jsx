@@ -73,7 +73,7 @@ export default function Chart() {
                                 fill: theme.palette.text.primary,
                             },
                             tickLabelStyle: theme.typography.body2,
-                            max: 5,
+                            max: 20,
                             tickNumber: 3,
                         },
                     ]}
