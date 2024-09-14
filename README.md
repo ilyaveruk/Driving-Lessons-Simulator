@@ -29,4 +29,17 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/driving-lessons-simulator.git
+   cd driving-lessons-simulator
+   ---
+
+### `getting-started.md`
+
+```markdown
+## 🏁 Getting Started
+
+1. **Launch the Simulator**:
+   - Open Unity Editor and press the `Play` button to start the simulator.
+
+2. **Login/Register**:
+   - Use the provided login or registration screen to access the simulator as a driver or instructor.
 
