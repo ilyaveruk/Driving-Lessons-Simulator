@@ -41,5 +41,21 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
    - Open Unity Editor and press the `Play` button to start the simulator.
 
 2. **Login/Register**:
-   - Use the provided login or registration screen to access the simulator as a driver or instructor.
+   - Use the provided login or registration screen to access the simulator as a driver or instructor.```
+
+## 📝 User Guide
+
+### **Driver Features**
+
+- **Track Selection**: After logging in, browse available tracks using the mouse and select one to start a session.
+- **Driving Session**: Use keyboard controls to navigate the track, and the in-game HUD will display your speed and session details.
+- **Rating the Track**: At the end of the session, rate the track using the provided rating screen and leave feedback.
+  - **View Ratings**: To review your past track ratings and feedback, visit the [Driver Dashboard](#) for a summary of your session ratings and comments.
+
+### **Instructor Features**
+
+- **Watching Replays**: Navigate to the replay section, select a session, and use the mouse to play, pause, rewind, or fast-forward.
+- **Creating New Tracks**: Use the Track Creation Tool to design new tracks by placing road elements, obstacles, and defining the layout.
+- **Editing Existing Tracks**: Modify previously created tracks using the editing tools and save the changes.
+  - **View Ratings and Feedback**: For a comprehensive view of ratings given to drivers and track performance, visit the [Instructor Dashboard](#) where you can manage and review all evaluations.
 
