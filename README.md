@@ -32,17 +32,20 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
    cd driving-lessons-simulator
    ```
 
-### `getting-started.md`
-
-```markdown
 ## 🏁 Getting Started
 
-1. **Launch the Simulator**:
-   - Open Unity Editor and press the `Play` button to start the simulator.
+### **Launching the Simulator**
 
-2. **Login/Register**:
-   - Use the provided login or registration screen to access the simulator as a driver or instructor.
-```
+- **Open Unity Editor**: Launch Unity and open the project.
+- **Start the Simulator**: Press the `Play` button to begin.
+
+### **Login/Register**
+
+- **Login Screen**: Use the login screen to enter your credentials.
+- **Registration**: If you are a new user, use the registration option to create an account.
+- **Role-Based Redirect**: Upon successful login, you will be redirected based on your user role:
+  - **Driver**: Redirected to the track selection menu where you can start a driving session.
+  - **Instructor**: Redirected to a menu with options to watch replays, create or edit tracks, and view ratings.
 
 ## 📝 User Guide
 
