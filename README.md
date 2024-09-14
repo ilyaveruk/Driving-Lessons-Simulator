@@ -28,7 +28,7 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/driving-lessons-simulator.git
+   git clone https://github.com/ilyaveruk/driving-lessons-simulator.git
    cd driving-lessons-simulator
    ```
 
@@ -54,14 +54,14 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
 - **Track Selection**: After logging in, browse available tracks using the mouse and select one to start a session.
 - **Driving Session**: Use keyboard controls to navigate the track, and the in-game HUD will display your speed and session details.
 - **Rating the Track**: At the end of the session, rate the track using the provided rating screen and leave feedback.
-  - **View Ratings**: To review your past track ratings and feedback, visit the [Driver Dashboard](#) for a summary of your session ratings and comments.
+  - **View Ratings**: To review your past track ratings and feedback, visit the [Driver Dashboard](#https://driving-lessons-simulator.vercel.app/) for a summary of your session ratings and comments.
 
 ### **Instructor Features**
 
 - **Watching Replays**: Navigate to the replay section, select a session, and use the mouse to play, pause, rewind, or fast-forward.
 - **Creating New Tracks**: Use the Track Creation Tool to design new tracks by placing road elements, obstacles, and defining the layout.
 - **Editing Existing Tracks**: Modify previously created tracks using the editing tools and save the changes.
-  - **View Ratings and Feedback**: For a comprehensive view of ratings given to drivers and track performance, visit the [Instructor Dashboard](#) where you can manage and review all evaluations.
+  - **View Ratings and Feedback**: For a comprehensive view of ratings given to drivers and track performance, visit the [Instructor Dashboard](#https://driving-lessons-simulator.vercel.app/) where you can manage and review all evaluations.
 
 ## 🎮 Controls
 
