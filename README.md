@@ -30,7 +30,7 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
    ```bash
    git clone https://github.com/yourusername/driving-lessons-simulator.git
    cd driving-lessons-simulator
-   ---
+   ```
 
 ### `getting-started.md`
 
@@ -41,7 +41,8 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
    - Open Unity Editor and press the `Play` button to start the simulator.
 
 2. **Login/Register**:
-   - Use the provided login or registration screen to access the simulator as a driver or instructor.```
+   - Use the provided login or registration screen to access the simulator as a driver or instructor.
+```
 
 ## 📝 User Guide
 
@@ -58,4 +59,40 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
 - **Creating New Tracks**: Use the Track Creation Tool to design new tracks by placing road elements, obstacles, and defining the layout.
 - **Editing Existing Tracks**: Modify previously created tracks using the editing tools and save the changes.
   - **View Ratings and Feedback**: For a comprehensive view of ratings given to drivers and track performance, visit the [Instructor Dashboard](#) where you can manage and review all evaluations.
+
+## 🎮 Controls
+
+### **Driver Controls** (Keyboard Only)
+
+- **Steering**: Left Arrow, Right Arrow
+- **Acceleration**: W, Up Arrow
+- **Braking/Reverse**: S, Down Arrow
+- **Handbrake**: Spacebar
+- **Camera View**: C
+- **Blink Left**: Z
+- **Blink Right**: X
+- **Lights**: L
+- **Highbeams**: K
+- **Emergency Lights**: J
+
+### **Instructor Controls**
+
+- **Replay Controls**: Use the mouse to play, pause, rewind, or fast-forward session replays.
+- **Track Creation/Editing**: Use the mouse for drag-and-drop track creation and editing.
+
+## 🔧 Further Improvements
+
+Future updates may include:
+
+- Dynamic weather conditions for enhanced realism.
+- Additional objects and interactive elements on tracks.
+- Integration of an AI assistant for real-time guidance.
+- Advanced performance analytics and benchmarking.
+- Expanded training scenarios and specialized modules.
+- Enhanced user interface with personalization and accessibility features.
+- Community features such as leaderboards and forums.
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
