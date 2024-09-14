@@ -69,7 +69,7 @@ export default function Orders() {
                     {rows.slice(0, limit).map((row) => (
                         <HoverTableRow key={row.id}>
                             <TableCell>{row.playerId}</TableCell>
-                            <TableCell>{row.role === 1 ? "Driver" : row.role === 0 ? "Instructor" : "No role has set"}</TableCell>
+                            <TableCell>{row.role === 0 ? "Driver" : row.role === 1 ? "Instructor" : "No role has set"}</TableCell>
                             <TableCell>{row.levelName}</TableCell>
                             <TableCell>{row.rating}</TableCell>
                             <TableCell>{row.description}</TableCell>
