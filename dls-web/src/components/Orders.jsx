@@ -10,6 +10,8 @@ import {useEffect, useState} from "react";
 import db from "../utils/Firebase";
 import { collection, getDocs } from 'firebase/firestore';
 import {styled} from "@mui/material/styles";
+import RankDetails from './RankDetails'; // Import the new component
+
 
 
 const HoverTableRow = styled(TableRow)({
@@ -21,6 +23,7 @@ const HoverTableRow = styled(TableRow)({
 export default function Orders() {
     const [rows, setRows] = useState([]);
     const [limit, setLimit] = useState(20);
+    const [selectedRank, setSelectedRank] = useState(null);
 
 
 
@@ -51,6 +54,14 @@ export default function Orders() {
         setLimit(prevLimit => prevLimit + 10);
     };
 
+    const handleRowClick = (rank) => {
+        setSelectedRank(rank);
+    };
+
+    const handleClose = () => {
+        setSelectedRank(null);
+    };
+
     return (
         <React.Fragment>
             <Title>Recent ratings</Title>
@@ -67,7 +78,7 @@ export default function Orders() {
                 </TableHead>
                 <TableBody>
                     {rows.slice(0, limit).map((row) => (
-                        <HoverTableRow key={row.id}>
+                        <HoverTableRow key={row.id} onClick={() => handleRowClick(row)}>
                             <TableCell>{row.playerId}</TableCell>
                             <TableCell>{row.role === 0 ? "Driver" : row.role === 1 ? "Instructor" : "No role has set"}</TableCell>
                             <TableCell>{row.levelName}</TableCell>
@@ -81,6 +92,7 @@ export default function Orders() {
             <Link color="primary" href="#" onClick={handleSeeMore} sx={{ mt: 3 }}>
                 See more ratings
             </Link>
+            <RankDetails rank={selectedRank} onClose={handleClose} />
         </React.Fragment>
     );
 }
