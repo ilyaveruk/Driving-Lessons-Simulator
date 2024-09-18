@@ -33,6 +33,7 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
    git clone https://github.com/ilyaveruk/driving-lessons-simulator.git
    cd driving-lessons-simulator
    ```
+    Unzip the "Production.zip" file and Enjoy! 
 
 ## 🏁 Getting Started
 
