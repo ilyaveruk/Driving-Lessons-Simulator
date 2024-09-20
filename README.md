@@ -1,7 +1,11 @@
 # Driving Lessons Simulator
 Final year project in ORT Braude   
 
-Link for Version Control and changeset history of Unity project: https://cloud.unity.com/home/organizations/18967855743533/plastic-scm/organizations/NewTema/repositories/Final%20Year%20Project
+Credentials for viewing the versions in Unity Verison Control:  
+Username: drivinglessonssimulator@gmail.com  
+Password: Braude2024
+
+Link for Version control and changeset history of Unity project: https://cloud.unity.com/home/organizations/18967855743533/plastic-scm/organizations/NewTema/repositories/Final%20Year%20Project
 
 Welcome to the **Driving Lessons Simulator** project! This simulator provides a comprehensive platform for both drivers and instructors to enhance driving skills and manage training sessions effectively.
 
@@ -15,8 +19,7 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
     - [Instructor Features](#instructor-features)
 5. [Controls](#controls)
 6. [Further Improvements](#further-improvements)
-7. [Contributing](#contributing)
-8. [License](#license)
+7. [License](#license)
 
 ## 🚀 Features
 
