@@ -19,8 +19,7 @@ Welcome to the **Driving Lessons Simulator** project! This simulator provides a 
     - [Instructor Features](#instructor-features)
 5. [Controls](#controls)
 6. [Further Improvements](#further-improvements)
-7. [Contributing](#contributing)
-8. [License](#license)
+7. [License](#license)
 
 ## 🚀 Features
 
