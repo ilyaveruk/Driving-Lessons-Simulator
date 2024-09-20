@@ -1,7 +1,7 @@
 # Driving Lessons Simulator
 Final year project in ORT Braude   
 
-Credentials for Viewing the versions:  
+Credentials for Viewing the versions in Unity Verison Control:  
 Username: drivinglessonssimulator@gmail.com  
 Password: Braude2024
 
